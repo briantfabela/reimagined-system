@@ -2,6 +2,7 @@ import quandl # you need to 'pip install quandl'
 import matplotlib.pyplot as plt
 import pandas
 import datetime
+import numpy as np # numpy library for distribution/stats of data
 
 QUANDL_API_KEY = 'JdQyF9KDxGpy7kwa9oia'
 
