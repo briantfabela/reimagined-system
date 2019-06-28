@@ -35,3 +35,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    
+    
+# Sample Visual
+def graph_it(x, y){
+    plt.plot(x, y)    
+}
