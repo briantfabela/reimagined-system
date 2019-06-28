@@ -42,3 +42,9 @@ if __name__ == "__main__":
 def graph_it(x, y){
     plt.plot(x, y)    
 }
+
+
+# filtering out based on length
+sample_list = []
+n # specified length number
+result = filter(lambda sample_list: len(sample_list) > n, sample_list)
