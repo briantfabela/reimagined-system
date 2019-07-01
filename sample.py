@@ -1,6 +1,6 @@
 import quandl # you need to 'pip install quandl'
 import matplotlib.pyplot as plt
-import pandas # using pandas to read data
+import pandas as pd # using pandas to read data
 import datetime
 import numpy as np # numpy library for distribution/stats of data
 
@@ -12,8 +12,6 @@ class quandl_data:
     def __init__(self, quandl_dataset_code, **kwargs):
         self.q_code = quandl_dataset_code
         self.data = self.fetch_data(self.q_code, **kwargs) # raw data
-        
-
 
     def fetch_data(self, code, **kwargs):
         '''Makes the api call and returns the response'''
@@ -26,25 +24,28 @@ class quandl_data:
 
 def main():
     # sample call
-    fed_debt_data = quandl_data("FRED/GFDEBTN", returns="pandas")
+    #fed_debt_data = quandl_data("FRED/GFDEBTN", returns="pandas")
     
+    # bank of mexico; peso per US Dollar (Nov 1991 - Present)
+    mxn_usd = quandl_data("BDM/SF60653")
+
     # basic sample plot
-    plt.plot(fed_debt_data.data)
-    plt.title("U.S. Federal National Debt")
+    plt.plot(mxn_usd.data)
+    plt.title("Peso per US Dollar")
     plt.show()
 
 if __name__ == "__main__":
     main()
 
     
-    
+'''
 # Sample Visual
 def graph_it(x, y){
     plt.plot(x, y)    
 }
-
+'''
 
 # filtering out based on length
 sample_list = []
-n # specified length number
+n = 0 # specified length number
 result = filter(lambda sample_list: len(sample_list) > n, sample_list)
