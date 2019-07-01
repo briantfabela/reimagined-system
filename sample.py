@@ -1,6 +1,6 @@
 import quandl # you need to 'pip install quandl'
 import matplotlib.pyplot as plt
-import pandas
+import pandas # using pandas to read data
 import datetime
 import numpy as np # numpy library for distribution/stats of data
 
