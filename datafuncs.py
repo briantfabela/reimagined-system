@@ -1,4 +1,5 @@
 # Data functions, objects, and methods for handling data
+# aka "Helper funcs fo here!"
 
 import quandl # you need to 'pip install quandl'
 import matplotlib.pyplot as plt
