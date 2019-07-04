@@ -11,3 +11,5 @@ TODO:
 - and let's try to merge new quandl data columns into those n-dimensional arrays
   if the dates are the same; like adding a new column to an excel spreadsheet
   
+Memo:
+- Could you post link to our dataset? or upload the file? I'll try to import it in our python
