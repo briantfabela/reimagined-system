@@ -13,3 +13,9 @@ TODO:
   
 Memo:
 - Could you post link to our dataset? or upload the file? I'll try to import it in our python
+
+dataset:
+- https://www.quandl.com/data/BP-Energy-Production-and-Consumption (from notebook)
+- ^ download link: https://www.quandl.com/api/v3/databases/BP/metadata?api_key=JdQyF9KDxGpy7kwa9oia
+
+you may need to register an account. its free
